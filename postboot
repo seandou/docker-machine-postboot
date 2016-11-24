@@ -1,0 +1,14 @@
+#!/bin/sh
+
+HOMEDIR="/Users/dou"
+DIRS="
+Data
+Projects
+Labs
+Downloads
+"
+
+for dir in $DIRS; do
+    ln -s $HOMEDIR/$dir /root/$dir
+    su - docker -c "ln -s $HOMEDIR/$dir /home/docker/$dir"
+end
