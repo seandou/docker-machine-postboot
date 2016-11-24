@@ -9,6 +9,6 @@ Downloads
 "
 
 for dir in $DIRS; do
-    ln -s $HOMEDIR/$dir /root/$dir
-    su - docker -c "ln -s $HOMEDIR/$dir /home/docker/$dir"
+    rm -f /root/$dir && ln -s $HOMEDIR/$dir /root/$dir
+    su - docker -c "rm -f /home/docker/$dir && ln -s $HOMEDIR/$dir /home/docker/$dir"
 done
