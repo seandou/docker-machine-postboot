@@ -7,3 +7,4 @@ alias da='cd /home/docker/Data/'
 
 alias dp='docker ps'
 alias di='docker images'
+alias rmi='docker rmi'
