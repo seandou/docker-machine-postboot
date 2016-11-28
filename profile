@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# exports
+export docker_data="/Users/dou/Data"
+
+# alias
 alias x='cd /home/docker/Labs/'
 alias p='cd /home/docker/Projects/'
 alias d='cd /home/docker/Downloads/'
